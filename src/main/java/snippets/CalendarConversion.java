@@ -4,10 +4,10 @@ import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.Date;
 
-
 /**
  * Code snippet shows how to set time to Date class object
  */
+
 public class CalendarConversion {
     public static void setTimeToDate() {
 
