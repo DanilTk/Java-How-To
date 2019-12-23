@@ -9,7 +9,7 @@ import java.util.stream.IntStream;
 
 public class StreamArrayTrimmer {
 
-    public static void main() {
+    public static void streamAndTrimArray() {
         String[][] arr = {{"  word  ", " word  "}, {"  word  ", " word  "}, {"  word  ", " word  ", "word  "}};
 
         String[][] result = IntStream.range(0, arr.length)
@@ -21,8 +21,8 @@ public class StreamArrayTrimmer {
         String[][] result2 = Arrays.stream(arr)
                 .map(strings -> IntStream.range(0, arr[0].length)
                         .mapToObj(j -> strings[j].trim())
-                        .toArray(String[]::new))
-                .toArray(String[][]::new);
+                        .toArray(value1 -> new String[value1]))
+                .toArray(value -> new String[value][]);
 
     }
 }
