@@ -1,6 +1,5 @@
 package snippets;
 
-
 /**
  * Code snippet shows how to calculate factorial
  */
