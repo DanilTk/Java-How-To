@@ -1,2 +1,2 @@
 # Java-How-To
-This project is devoted to collecting useful code snippets
+This repo is for useful code snippets storing
