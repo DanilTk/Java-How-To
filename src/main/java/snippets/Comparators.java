@@ -5,6 +5,10 @@ import java.util.Comparator;
 import java.util.List;
 import java.util.stream.Collectors;
 
+/**
+ * Code snippet shows how to sort a double-element array
+ */
+
 public class Comparators {
     public static void compareByFirstElement() {
 

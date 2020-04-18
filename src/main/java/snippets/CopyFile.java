@@ -1,14 +1,12 @@
 package snippets;
 
-import lombok.Getter;
-import lombok.Setter;
+import lombok.Data;
 
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
 import java.io.IOException;
 
-@Getter
-@Setter
+@Data
 public class CopyFile {
     private int i;
     private FileInputStream fileInputStream;

@@ -14,6 +14,10 @@ import java.util.List;
 import java.util.Map;
 import java.util.stream.Collectors;
 
+/**
+ * Code snippet shows how to collect errors thrown within context
+ */
+
 @ControllerAdvice
 public class CollectErrorsInControllerAdvise extends ResponseEntityExceptionHandler {
 
