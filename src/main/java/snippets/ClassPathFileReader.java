@@ -2,6 +2,9 @@ package snippets;
 
 import java.io.IOException;
 import java.io.InputStream;
+import java.io.Reader;
+import java.nio.file.Files;
+import java.nio.file.Paths;
 import java.util.Properties;
 
 /**
@@ -18,5 +21,11 @@ public class ClassPathFileReader {
         } catch (IOException e) {
             e.printStackTrace();
         }
+    }
+
+    public Reader readFileExample() throws Exception {
+        Reader reader = Files.newBufferedReader(Paths.get(
+                ClassLoader.getSystemResource("filename.xxx").toURI()));
+        return reader;
     }
 }
